@@ -1,0 +1,92 @@
+<div *ngIf="renderKey === '1'">
+    <!-- search results -->
+    <div class="message" role="status">搜尋結果: 共1042筆</div>
+    <!-- buttons -->
+    <app-button [buttonIcon]="'search'" [buttonText]="'查看員工資料'" />
+    <app-button [buttonIcon]="'reload'" [buttonText]="'修改員工資料'" />
+    <app-button [buttonIcon]="'delete'" [buttonText]="'刪除'" />
+</div>
+<div *ngIf="renderKey === '2'">
+    <!-- search results -->
+    <div class="message" role="status">搜尋結果: 共143筆</div>
+    <!-- buttons -->
+    <app-button [buttonIcon]="'search'" [buttonText]="'查看員工資料'" />
+</div>
+<div *ngIf="renderKey === '3'">
+    <!-- search results -->
+    <div class="message" role="status">搜尋結果: 共899筆</div>
+    <!-- buttons -->
+    <app-button [buttonIcon]="'search'" [buttonText]="'查看員工資料'" />
+    <app-button [buttonIcon]="'reload'" [buttonText]="'修改員工資料'" />
+    <app-button [buttonIcon]="'delete'" [buttonText]="'刪除'" />
+</div>
+<form>
+    <div class="mt"></div>
+    <div class="table-container">
+        <ng-container>
+            <table class="bordered-table">
+                <thead>
+                    <tr class=" custom-header bold-text">
+                        <th class="tr-cell-120" nzAlign="center">編輯</th>
+                        <th class="tr-cell-120" nzAlign="center">績效評估結果</th>
+                        <th class="tr-cell-120" nzAlign="center">填表日期</th>
+                        <th class="tr-cell-120" nzAlign="center">姓名</th>
+                        <th class="tr-cell-120" nzAlign="center">部門</th>
+                        <th class="tr-cell-120" nzAlign="center">直屬主管</th>
+                        <th class="tr-cell-120" nzAlign="center">填表人員</th>
+                        <th class="tr-cell-120" nzAlign="center">在職狀態</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of items; let i = index" [ngClass]="{'even-row': i % 2 === 1}">
+                        <td class="td-cell-120 custom-cell" nzAlign="center">
+                            <input type="radio">
+                        </td>
+                        <td class="td-cell-120 custom-cell" nzAlign="center">
+                            <ng-container *ngIf="renderKey === '1'">
+                                <app-select [options]="item.selectedOption_1" [selectWidth]="'150px'" />
+                            </ng-container>
+                            <ng-container *ngIf="renderKey === '2'">
+                                <app-select [options]="item.selectedOption_1" [selectWidth]="'150px'"
+                                    [disabled]="true" />
+                            </ng-container>
+                            <ng-container *ngIf=" renderKey === '3'">
+                                <app-select [options]="item.selectedOption_1" [selectWidth]="'150px'"
+                                    [optionSelected]="item.optionSelected_1" />
+                            </ng-container>
+                        </td>
+                        <td class="td-cell-120 custom-cell" nzAlign="center">{{ item.date }}</td>
+                        <td class="td-cell-120 custom-cell" nzAlign="center">{{ item.name }}<br>{{ item.id }}</td>
+                        <td class="td-cell-120 custom-cell" nzAlign="center">{{ item.location }}</td>
+                        <td class="td-cell-120 custom-cell" nzAlign="center">{{ item.immediateSupervisor }}</td>
+                        <td class="td-cell-120 custom-cell" nzAlign="center">
+                            <ng-container *ngIf="renderKey === '1'">
+                                <app-select [options]="item.selectedOption_2" [selectWidth]="'120px'"></app-select>
+                            </ng-container>
+                            <ng-container *ngIf="renderKey === '2'">
+                                {{ item.formFiller }}
+                            </ng-container>
+                            <ng-container *ngIf="renderKey === '3'">
+                                <app-select [options]="item.selectedOption_2" [selectWidth]="'120px'"
+                                    [optionSelected]="item.optionSelected_2"></app-select>
+                            </ng-container>
+                        </td>
+                        <td class="td-cell-120 custom-cell" nzAlign="center">
+                            <div class='font-color-yellow' *ngIf="renderKey === '1'">
+                                <b>{{ item.status_5 }}<br>{{ item.status_1 }}</b>
+                            </div>
+                            <div class='font-color-red' *ngIf="renderKey === '2'">
+                                <b>{{ item.status_2 }}</b>
+                            </div>
+                            <div class='font-color-blue' *ngIf="renderKey === '3'">
+                                <b>{{ item.status_3 }}<br>{{ item.status_4 }}</b>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </ng-container>
+    </div>
+</form>
+<div class="mt-10"></div>
+<app-pagination></app-pagination>

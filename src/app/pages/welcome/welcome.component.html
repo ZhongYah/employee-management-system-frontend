@@ -1,0 +1,84 @@
+<div class="card-header">
+    <h5>待簽核表單</h5>
+    <form>
+        <div class="mt"></div>
+        <div class="table-container">
+            <ng-container>
+                <table class="bordered-table">
+                    <thead>
+                        <tr class=" custom-header bold-text">
+                            <!-- <th class="tr-cell-20" nzAlign="center">簽核</th>
+                            <th class="tr-cell-20" nzAlign="center">同意簽核</th> -->
+                            <th class="tr-cell-80" nzAlign="center">提醒資訊</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of items_1; let i = index" [ngClass]="{'even-row': i % 2 === 1}">
+                            <!-- <td class="td-cell-20 custom-cell" nzAlign="center"><input type="checkbox"
+                                    class="custom-checkbox" /></td>
+                            <td class="td-cell-20 custom-cell" nzAlign="center"><app-button [buttonIcon]="'accept'"
+                                    [buttonText]="'確認'"></app-button></td> -->
+                            <td class="td-cell-80 custom-cell">
+                                <p [innerHTML]="getInfoWithLink(item.info)" (click)="handleModalLinkClick()"></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ng-container>
+        </div>
+    </form>
+    <div class='mt-20'></div>
+    <h5>最新公告</h5>
+    <form>
+        <div class="mt"></div>
+        <div class="table-container">
+            <ng-container>
+                <table class="bordered-table">
+                    <thead>
+                        <tr class=" custom-header bold-text">
+                            <th class="tr-cell-20" nzAlign="center">日期</th>
+                            <th class="tr-cell-80" nzAlign="center">主旨</th>
+                            <th class="tr-cell-20" nzAlign="center">公告單位</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of items_2; let i = index" [ngClass]="{'even-row': i % 2 === 1}">
+                            <td class="td-cell-20 custom-cell" nzAlign="center">{{ item.date }}</td>
+                            <td class="td-cell-80 custom-cell"><a (click)="openModal('主旨標題',item.info,'')">{{ item.info
+                                    }}</a></td>
+                            <td class="td-cell-20 custom-cell" nzAlign="center">{{ item.unit }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </ng-container>
+        </div>
+    </form>
+</div>
+
+<ng-template #contentTemplate>
+    <form>
+        <div class="mt"></div>
+        <ng-container>
+            <table class="bordered-table">
+                <thead>
+                    <tr class=" custom-header bold-text">
+                        <th class="tr-cell-20" nzAlign="center">簽核</th>
+                        <th class="tr-cell-20" nzAlign="center">同意</th>
+                        <th class="tr-cell-80" nzAlign="center">內容資訊</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td-cell-20 custom-cell" nzAlign="center"><input type="checkbox" /></td>
+                        <td class="td-cell-20 custom-cell" nzAlign="center">
+                            <button nz-button nzOutline>確認</button>
+                        </td>
+                        <td class="td-cell-80 custom-cell">
+                            113/6/18 員工旅遊補助申請到期，核銷旅費。
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </ng-container>
+    </form>
+</ng-template>

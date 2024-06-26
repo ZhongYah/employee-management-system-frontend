@@ -1,0 +1,76 @@
+.tr-cell {
+    width: 15%;
+}
+
+.td-cell {
+    width: 25%;
+}
+
+.custom-header {
+    border-radius: 5px;
+    background: #8ad3ef;
+}
+
+.custom-cell {
+    background-color: #fcfcfc;
+}
+
+@media screen and (max-width: 1024px) {
+    .bordered-table {
+        display: block;
+    }
+
+    .bordered-table tr {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid #cccccc;
+        margin-bottom: 8px;
+    }
+
+    .bordered-table th,
+    .bordered-table td {
+        flex: 1 1 100%;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        text-align: center;
+    }
+
+    .bordered-table th {
+        background-color: #e6f0fb;
+        padding: 10px;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .bordered-table td {
+        border-top: 1px solid #cccccc;
+        padding: 10px;
+    }
+
+    .bordered-table tr:nth-child(even) th {
+        background-color: #e6f0fb;
+    }
+
+    .bordered-table tr:nth-child(odd) th {
+        background-color: #e6f0fb;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            width: 100%;
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .select-field-15 {
+        width: 50%;
+    }
+}

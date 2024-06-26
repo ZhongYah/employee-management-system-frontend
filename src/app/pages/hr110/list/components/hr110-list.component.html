@@ -1,0 +1,98 @@
+<div *ngIf="formState.showPage.value==='hr110-list'">
+    <!-- board -->
+    <app-hr110-board *ngIf="isBoardVisible"
+        (showInformKeyChange)="handleShowInformChanged('showInform_output', $event)"></app-hr110-board>
+    <!-- <div class="mt"></div> -->
+    <!-- list -->
+    <div class="table-container">
+        <ng-container>
+            <form>
+                <nz-table class="bordered-table">
+                    <tr>
+                        <th class="tr-cell custom-header bold-text" nzAlign="center">姓名</th>
+                        <td class="td-cell custom-cell">
+                            <app-input [inputWidth]="'300px'"
+                                (inputTextChange)="handleInputChanged('inputText_1', $event)"
+                                [contentEntered]="formState.inputText_1.value" />
+                        </td>
+                        <th class="tr-cell custom-header bold-text" nzAlign="center">身分證字號</th>
+                        <td class="td-cell custom-cell">
+                            <app-input [inputWidth]="'300px'"
+                                (inputTextChange)="handleInputChanged('inputText_2', $event)"
+                                [contentEntered]="formState.inputText_2.value" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="tr-cell custom-header bold-text" nzAlign="center">性別</th>
+                        <td class="td-cell custom-cell">
+                            <app-select [selectWidth]="'135px'" [options]="selectOptions_1"
+                                (selectionChange)="handleSelectChanged('selectOption_1',$event)"
+                                [optionSelected]="formState.optionSelected_1.value" />
+                        </td>
+                        <th class="tr-cell custom-header bold-text" nzAlign="center">員工編號</th>
+                        <td class="td-cell custom-cell">
+                            <app-input [inputWidth]="'300px'"
+                                (inputTextChange)="handleInputChanged('inputText_3', $event)"
+                                [contentEntered]="formState.inputText_3.value" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="tr-cell custom-header bold-text" nzAlign="center">部門單位</th>
+                        <td class="td-cell custom-cell">
+                            <app-select [selectWidth]="'135px'" [options]="selectOptions_2"
+                                (selectionChange)="handleSelectChanged('selectOption_2',$event)"
+                                [optionSelected]="formState.optionSelected_2.value" />
+                            <app-select [selectWidth]="'160px'" [options]="selectOptions_3"
+                                (selectionChange)="handleSelectChanged('selectOption_3',$event)"
+                                [optionSelected]="formState.optionSelected_3.value" />
+                        </td>
+                        <th class="tr-cell custom-header bold-text" nzAlign="center">工作職務</th>
+                        <td class="td-cell custom-cell">
+                            <app-select [selectWidth]="'300px'" [options]="selectOptions_4"
+                                (selectionChange)="handleSelectChanged('selectOption_4',$event)"
+                                [optionSelected]="formState.optionSelected_4.value" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="tr-cell custom-header bold-text" nzAlign="center">通訊電話</th>
+                        <td class="td-cell custom-cell">
+                            <app-input [inputWidth]="'300px'"
+                                (inputTextChange)="handleInputChanged('inputText_4', $event)"
+                                [contentEntered]="formState.inputText_4.value" />
+                        </td>
+                        <th class="tr-cell custom-header bold-text" nzAlign="center">受雇日期</th>
+                        <td class="td-cell custom-cell">
+                            <app-datePicker /> 至 <app-datePicker />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="tr-cell custom-header bold-text" nzAlign="center">通訊地址</th>
+                        <td class="td-cell custom-cell" colspan="3">
+                            <app-select [selectWidth]="'135px'" [options]="selectOptions_5"
+                                (selectionChange)="handleSelectChanged('selectOption_5',$event)"
+                                [optionSelected]="formState.optionSelected_5.value" />
+                            <app-select [selectWidth]="'135px'" [options]="selectOptions_6"
+                                (selectionChange)="handleSelectChanged('selectOption_6',$event)"
+                                [optionSelected]="formState.optionSelected_6.value" />
+                            <app-input [inputWidth]="'60pc'"
+                                (inputTextChange)="handleInputChanged('inputText_7', $event)"
+                                [contentEntered]="formState.inputText_7.value" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="6" class="button-container custom-header bold-text">
+                            <app-button [buttonIcon]="'board'" [buttonText]="'儀錶板'" (click)="showBoard()" />
+                            <app-button [buttonIcon]="'search'" [buttonText]="'人員搜尋'"
+                                (click)="handleShowInformChanged('showInform_1', '1')" />
+                            <app-button [buttonIcon]="'add'" [buttonText]="'新增'" />
+                            <app-button [buttonIcon]="'print'" [buttonText]="'報表產製'" />
+                            <app-button [buttonIcon]="'close'" [buttonText]="'關閉'" (click)="closeTab('員工資料管理(人資)')" />
+                        </th>
+                    </tr>
+                </nz-table>
+            </form>
+        </ng-container>
+    </div>
+    <div class="mt"></div>
+    <app-hr110-list2 *ngIf="isInformVisible" [renderKey]="formState.showInformKey.value"></app-hr110-list2>
+</div>

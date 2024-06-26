@@ -1,0 +1,88 @@
+::ng-deep .fc-day-sat,
+::ng-deep .fc-day-sun {
+    background-color: rgb(255, 242, 232) !important;
+}
+
+::ng-deep .fc-daygrid-day-number,
+::ng-deep .fc-col-header-cell-cushion {
+    color: rgb(255, 77, 0);
+}
+
+::ng-deep {
+    .fc-event-title,
+    .fc-event-time {
+        color: rgb(255, 77, 0) !important;
+    }
+
+    .fc-sticky.fc-event-title {
+        color: black !important;
+    }
+}
+
+::ng-deep {
+    .fc-daygrid-day-number:hover,
+    .fc-col-header-cell-cushion:hover {
+        color: rgb(158, 51, 1);
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    gap: 2px; /* 按鈕之間的間距 */
+}
+
+.buttons button {
+    padding: 1px 2px;
+    font-size: 14px;
+}
+
+/* 燈箱 */
+.tr-cell {
+    width: 20%;
+    height: 50px;
+}
+
+.td-cell {
+    width: 40%;
+    height: 50px;
+}
+
+.custom-header {
+    border-radius: 3px;
+    background: #ffd2a5;
+    text-align: center; /* 居中文本 */
+    vertical-align: middle; /* 垂直居中 */
+}
+
+.custom-cell {
+    background-color: #f0efff;
+}
+
+.table-row-spacing th,
+.table-row-spacing td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.custom-disabled-text[disabled] {
+    color: #333333; /* 設置禁用狀態的文字顏色 */
+    opacity: 1; /* 確保不透明度為1 */
+}
+
+.input-container {
+    display: flex; /* 使用 Flexbox 來排列內容 */
+    gap: 5px; /* 設置間距 */
+}
+
+.input-container input[type='date'] {
+    font-size: 16px; /* 設置字體大小為 16px */
+    border-radius: 5px;
+}
+
+.input-container input[type='text'] {
+    font-size: 16px; /* 設置字體大小為 16px */
+    border-radius: 5px;
+    width: 120px;
+}

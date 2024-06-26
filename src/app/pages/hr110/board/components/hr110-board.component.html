@@ -1,0 +1,30 @@
+<!-- board -->
+<div class="table-container">
+    <ng-container>
+        <form>
+            <nz-row [nzGutter]="16">
+                <nz-col [nzSpan]="24">
+                    <nz-table class="bordered-table">
+                        <tr>
+                            <th colspan="6" class="custom-header bold-text">管理員：
+                                <app-select [selectWidth]="'135px'" [options]="selectOptions_1"
+                                    [defaultPlaceHolder]="false" (selectionChange)="handleSelectChanged($event)"
+                                    [optionSelected]="formState.optionSelected_0.value" />
+                                <app-button [buttonIcon]="'search'" [buttonText]="'查詢'"
+                                    (buttonClick)="handleButtonClick()" />
+                            </th>
+                        </tr>
+                        <tr>
+                            <th nzAlign="center" class="custom-header bold-text">已離職</th>
+                            <td nzAlign="center" class="custom-cell"><a
+                                    (click)="handleShowInformChanged('showInform_2')" class="custom-link">143</a></td>
+                            <th nzAlign="center" class="custom-header bold-text">在職中</th>
+                            <td nzAlign="center" class="custom-cell"><a
+                                    (click)="handleShowInformChanged('showInform_3')" class="custom-link">899</a></td>
+                        </tr>
+                    </nz-table>
+                </nz-col>
+            </nz-row>
+        </form>
+    </ng-container>
+</div>

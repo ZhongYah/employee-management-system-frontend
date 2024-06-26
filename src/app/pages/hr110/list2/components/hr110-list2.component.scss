@@ -1,0 +1,42 @@
+.message {
+    background: #f2e2dd url(../../../../../assets/img/information.png) 8px 50%
+        no-repeat;
+    border: 1px solid #fa8058;
+    color: #b4050b;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.tr-cell-120 {
+    width: 120px;
+}
+
+.td-cell-120 {
+    width: 120px;
+}
+
+.custom-header {
+    background: linear-gradient(to bottom, #d5dcbe, #b5ca7f);
+}
+
+.custom-cell {
+    background-color: #fffdf2;
+}
+
+.even-row .custom-cell {
+    background-color: #f1f6fd !important;
+}
+
+.font-color-blue {
+    color: #0d1ce6;
+}
+
+.font-color-red {
+    color: #ff0000;
+}
+
+.font-color-yellow {
+    color: #bf6a02;
+}

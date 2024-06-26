@@ -1,0 +1,80 @@
+<!-- <app-button [buttonIcon]="'date'" [buttonText]="'行事曆'" /> -->
+<app-button [buttonIcon]="'add'" [buttonText]="'新建行程'"></app-button>
+<div class="mt-20"></div>
+<full-calendar [options]='calendarOptions()' />
+
+<ng-template #contentTemplate>
+    <div class="table-container">
+        <form>
+            <nz-table class="bordered-table">
+                <tr class="table-row-spacing">
+                    <th class="tr-cell custom-header bold-text" nzAlign="center">行程名稱:</th>
+                    <td class="td-cell custom-cell">
+                        <app-input id="title" [contentEntered]="modalData.title" [disabled]="!isEditing"
+                            [inputWidth]="'250px'" [attachClassName]="['custom-disabled-text']"></app-input>
+                    </td>
+                </tr>
+                <tr class="table-row-spacing">
+                    <th class="tr-cell custom-header bold-text" nzAlign="center">起始日期:</th>
+                    <td class="td-cell custom-cell">
+                        <div class="input-container">
+                            <input id="startDate" [(ngModel)]="modalData.startDate" name="startDate" type="date"
+                                [disabled]="!isEditing" class="custom-disabled-text" />
+                            <div *ngIf="modalData.startDateTime !=='' || (modalData.startDateTime ==='' && isEditing)">
+                                <input id="startDateTime" type="text" [disabled]="!isEditing"
+                                    [(ngModel)]="modalData.startDateTime" [ngModelOptions]="{ standalone: true }"
+                                    placeholder="請輸入開始時間">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-row-spacing">
+                    <th class="tr-cell custom-header bold-text" nzAlign="center">結束日期:</th>
+                    <td class="td-cell custom-cell">
+                        <div class="input-container">
+                            <input id="endDate" [(ngModel)]="modalData.endDate" name="endDate" type="date"
+                                [disabled]="!isEditing" class="custom-disabled-text" />
+                            <div *ngIf="modalData.endDateTime !=='' || (modalData.endDateTime ==='' && isEditing)">
+                                <input id="startDateTime" type="text" [disabled]="!isEditing"
+                                    [(ngModel)]="modalData.endDateTime" [ngModelOptions]="{ standalone: true }"
+                                    placeholder="請輸入結束時間">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-row-spacing">
+                    <th class="tr-cell custom-header bold-text" nzAlign="center">地點:</th>
+                    <td class="td-cell custom-cell">
+                        <app-input id="location" [contentEntered]="modalData.location" [disabled]="!isEditing"
+                            [inputWidth]="'250px'" [attachClassName]="['custom-disabled-text']"></app-input>
+                    </td>
+                </tr>
+                <tr class="table-row-spacing">
+                    <th class="tr-cell custom-header bold-text" nzAlign="center">行程摘要:</th>
+                    <td class="td-cell custom-cell">
+                        <nz-textarea-count [nzMaxCharacterCount]="100" data-count="0/100">
+                            <textarea id="summary" nz-input [(ngModel)]="modalData.summary" name="summary"
+                                [disabled]="!isEditing"
+                                style="width: 100%; height: 100px;  border-radius: 5px; font-size: 16px;"
+                                class="custom-disabled-text"></textarea>
+                        </nz-textarea-count>
+                    </td>
+                </tr>
+                <tr class="table-row-spacing">
+                    <th colspan="6" class="button-container bold-text">
+                        <div class="buttons">
+                            <div *ngIf="modalData.showEdit">
+                                <app-button type="button" (click)="toggleEdit()" [buttonText]="isEditing ? '保存' : '編輯'"
+                                    [buttonIcon]="isEditing ? 'save':'pencial'" />
+                            </div>
+                            <div *ngIf="modalData.showEdit">
+                                <app-button type="button" (click)="onDeleteClick()" [buttonText]="'刪除'"
+                                    [buttonIcon]="'close'" />
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </nz-table>
+        </form>
+    </div>
+</ng-template>

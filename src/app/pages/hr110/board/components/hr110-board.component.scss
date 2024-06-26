@@ -1,0 +1,88 @@
+.custom-header {
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, #ffcccc, #ffcc99);
+}
+
+.custom-cell {
+    background-color: #ececec;
+}
+
+.custom-link {
+    color: #666666;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none; /* 刪除底線 */
+}
+
+@media screen and (max-width: 1024px) {
+    .bordered-table {
+        display: block;
+    }
+
+    .bordered-table {
+        tr {
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #cccccc;
+            margin-bottom: 8px;
+
+            th,
+            td {
+                flex: 1 1 100%;
+                box-sizing: border-box;
+                border: none;
+                padding: 10px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #f8e3e0;
+                border-bottom: 1px solid #cccccc;
+                width: 100%;
+            }
+
+            td {
+                border-top: 1px solid #cccccc;
+                width: 100%;
+            }
+
+            &:nth-child(even) {
+                th {
+                    background-color: #f8e3e0;
+                }
+            }
+
+            &:nth-child(odd) {
+                th {
+                    background-color: #f8e3e0;
+                }
+            }
+        }
+    }
+
+    .custom-container {
+        display: block;
+    }
+
+    th[colspan='6'] {
+        display: block;
+        margin-bottom: 10px;
+
+        app-select {
+            width: 100%;
+        }
+    }
+
+    th[colspan='6'] {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        button {
+            flex: 0 0 auto;
+            margin: 5 10px;
+        }
+    }
+}

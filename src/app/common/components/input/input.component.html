@@ -1,0 +1,3 @@
+<!-- <input nzSize="large" nz-input class="input-field-70" /> -->
+
+<input nzSize="large" nz-input [ngClass]="getInputClass()" [(ngModel)]="contentEntered" (ngModelChange)="onInputTextChange($event)" [disabled]="disabled"/>
