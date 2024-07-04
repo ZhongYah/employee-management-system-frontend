@@ -27,14 +27,6 @@
 
 運行“ng build”來建置專案。建置工件將儲存在“dist/”目錄中。
 
-#### 運行單元測試
-
-執行 `ng test` 透過 [Karma](https://karma-runner.github.io) 執行單元測試。
-
-#### 運行端對端測試
-
-執行“ng e2e”透過您選擇的平台執行端對端測試。要使用該命令，您需要先新增一個實現端到端測試功能的套件。
-
 #### 進一步幫助
 
 要獲得更多關於 Angular CLI 的協助，請使用「ng help」或查看 [Angular CLI 概述和命令參考](https://angular.io/cli) 頁面。
