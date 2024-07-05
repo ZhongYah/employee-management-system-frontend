@@ -15,21 +15,18 @@
 
 該專案是使用 [Angular CLI](https://github.com/angular/angular-cli) 版本 17.3.8 產生的。
 
+#### 專案設定
+
+```
+npm install
+```
+
 #### 開發伺服器
 
-為開發伺服器運行“ng serve”。導航至“http://localhost:4200/”。如果您更改任何來源文件，應用程式將自動重新載入。
-
-#### 程式碼腳手架
-
-執行“ng generate組件組件名稱”來產生一個新組件。您也可以使用“nggeneratedirective|pipe|service|class|guard|interface|enum|module”。
-
-#### 建造
-
-運行“ng build”來建置專案。建置工件將儲存在“dist/”目錄中。
-
-#### 進一步幫助
-
-要獲得更多關於 Angular CLI 的協助，請使用「ng help」或查看 [Angular CLI 概述和命令參考](https://angular.io/cli) 頁面。
+```
+ng serve
+```
+導航至 http://localhost:4200/
 
 ## [畫面展示 ── Demo]
 
