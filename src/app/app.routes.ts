@@ -36,4 +36,9 @@ export const routes: Routes = [
       // 可以加入其他子路由...
     ],
   },
+  {
+    path: 'login',
+    loadChildren: () =>
+      import('./common/login/login.routes').then((m) => m.LOGIN_ROUTES),
+  }
 ];

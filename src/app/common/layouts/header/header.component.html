@@ -10,15 +10,16 @@
     </button>
     <a href="/" class="logo-link"><img src="../../../../assets/img/header_banner.png" alt="Logo" class="logo"></a>
     <span class="welcome-text">歡迎! 系統使用者!</span>
-    <div class="d-flex">
+    <!-- <div class="d-flex">
         <div class="navbar-text auto_logout "> <span class="">自動登出時間</span>
             <span class="countdown">14:59</span>
             <span class="reset">
                 <img src="../../../../assets/img/icons-reset.svg" alt="reset countdown clock icon" />
             </span>
         </div>
-    </div>
-    <button [nzSize]="'default'" nz-button class="logout-button">
+    </div> -->
+    <app-logout></app-logout>
+    <button [nzSize]="'default'" nz-button class="logout-button" (click)="logout()">
         <span>登出</span>
     </button>
 </div>

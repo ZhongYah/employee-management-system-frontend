@@ -55,41 +55,50 @@
         margin-top: -37px;
     }
 
-    .d-flex {
-        display: flex;
-        margin-left: 1020px;
-        margin-top: -40px;
+    .logout-button:hover {
+        opacity: 0.9; 
+        transform: scale(1.1); 
     }
 
-    .navbar-text {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        color: var(--bs-navbar-color);
+    .logout-button:active {
+        opacity: 1.5;
     }
 
-    .navbar-text a,
-    .navbar-text a:hover,
-    .navbar-text a:focus {
-        color: var(--bs-navbar-active-color);
-    }
+    // .d-flex {
+    //     display: flex;
+    //     margin-left: 1020px;
+    //     margin-top: -40px;
+    // }
 
-    .auto_logout {
-        font-size: 0.9375rem;
-        color: #666;
-        line-height: 1.4rem;
-        padding-top: 0;
-    }
+    // .navbar-text {
+    //     padding-top: 0.5rem;
+    //     padding-bottom: 0.5rem;
+    //     color: var(--bs-navbar-color);
+    // }
 
-    .auto_logout .countdown {
-        color: #b82b22;
-    }
+    // .navbar-text a,
+    // .navbar-text a:hover,
+    // .navbar-text a:focus {
+    //     color: var(--bs-navbar-active-color);
+    // }
 
-    .auto_logout .reset {
-        margin: 0 1rem 0 0;
-        padding-right: 1rem;
-    }
+    // .auto_logout {
+    //     font-size: 0.9375rem;
+    //     color: #666;
+    //     line-height: 1.4rem;
+    //     padding-top: 0;
+    // }
 
-    .auto_logout .reset img {
-        width: 1.5rem;
-    }
+    // .auto_logout .countdown {
+    //     color: #b82b22;
+    // }
+
+    // .auto_logout .reset {
+    //     margin: 0 1rem 0 0;
+    //     padding-right: 1rem;
+    // }
+
+    // .auto_logout .reset img {
+    //     width: 1.5rem;
+    // }
 }
