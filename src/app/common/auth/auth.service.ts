@@ -34,7 +34,6 @@ export class AuthService {
                 // 當路由變化結束時檢查路徑
                 if (event.url === '/login') {
                     localStorage.removeItem('savedTabs')
-                    this.clearPageStateByPrefix('pageState_')
                 }
             }
         })
@@ -52,7 +51,6 @@ export class AuthService {
                     // 當路由變化結束時檢查路徑
                     if (event.url === '/login') {
                         localStorage.removeItem('savedTabs')
-                        this.clearPageStateByPrefix('pageState_')
                     }
                 }
             })
@@ -71,15 +69,5 @@ export class AuthService {
             document.addEventListener('click', handleUserInteraction)
             document.addEventListener('keydown', handleUserInteraction)
         }
-    }
-
-    // 清除 localStorage 中所有以指定前綴開頭的項目
-    private clearPageStateByPrefix(prefix: string): void {
-        const keys = Object.keys(localStorage)
-        keys.forEach((key) => {
-            if (key.startsWith(prefix)) {
-                localStorage.removeItem(key)
-            }
-        })
     }
 }
