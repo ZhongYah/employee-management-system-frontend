@@ -17,6 +17,24 @@
     opacity: 1; /* 確保不透明度為1 */
 }
 
+.input-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button-icon {
+    width: 20px;
+    margin-right: -20px;
+    margin-top: -5px;
+}
+
 // 百分比
 .input-width-15pc {
     width: 15%;

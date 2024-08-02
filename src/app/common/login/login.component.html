@@ -1,3 +1,28 @@
-<p>login works!</p>
-
-<a href="/"><app-button [buttonText]="'登入'"></app-button></a>
+<nz-table class="bordered-table-login">
+    <tr>
+        <th colspan="6" class="custom-header bold-text">
+            <img src="favicon.ico">
+            <p style='font-size: large; color: #f85b5b;'>員工管理系統</p>
+        </th>
+    </tr>
+    <tr>
+        <th class="tr-cell custom-header bold-text" nzAlign="center">帳號/電子信箱</th>
+        <td class="td-cell custom-cell">
+            <app-input [inputWidth]="'250px'" [placeholderText]="'請輸入帳號/電子信箱'" [contentEntered]="contentEntered_1"></app-input>
+        </td>
+    </tr>
+    <tr>
+        <th class="tr-cell custom-header bold-text" nzAlign="center">密碼</th>
+        <td class="td-cell custom-cell">
+            <app-input [inputWidth]="'250px'" [type]="'PWD'" [placeholderText]="'請輸入密碼'" [contentEntered]="contentEntered_2"></app-input>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="6" class="custom-header bold-text">
+            <a href="/">
+                <app-button [buttonText]="'登入'"></app-button>
+            </a>
+            <app-button [buttonText]="'註冊'"></app-button>
+        </th>
+    </tr>
+</nz-table>
