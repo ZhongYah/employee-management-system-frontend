@@ -6,19 +6,14 @@ import {
   NzNoAnimationDirective
 } from "./chunk-CH5A5UKB.js";
 import {
-  NavigationEnd,
-  Router,
-  RouterLink
-} from "./chunk-EOJUAMLJ.js";
+  NzIconDirective,
+  NzIconModule
+} from "./chunk-VMBBQAMK.js";
 import {
   collapseMotion,
   slideMotion,
   zoomBigMotion
 } from "./chunk-ZJY3TXXI.js";
-import {
-  NzIconDirective,
-  NzIconModule
-} from "./chunk-YLPDYRSB.js";
 import {
   NzOutletModule,
   NzStringTemplateOutletDirective
@@ -37,6 +32,11 @@ import {
 import {
   Directionality
 } from "./chunk-AA6VEHDB.js";
+import {
+  NavigationEnd,
+  Router,
+  RouterLink
+} from "./chunk-EOJUAMLJ.js";
 import {
   NgClass,
   NgTemplateOutlet
@@ -1936,4 +1936,4 @@ export {
   NzMenuDividerDirective,
   NzMenuModule
 };
-//# sourceMappingURL=chunk-PGJ3YZFN.js.map
+//# sourceMappingURL=chunk-VJE5B4K6.js.map

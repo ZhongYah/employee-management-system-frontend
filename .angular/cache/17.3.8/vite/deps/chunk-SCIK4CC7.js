@@ -6,12 +6,12 @@ import {
   NzNoAnimationDirective
 } from "./chunk-CH5A5UKB.js";
 import {
-  treeCollapseMotion
-} from "./chunk-ZJY3TXXI.js";
-import {
   NzIconDirective,
   NzIconModule
-} from "./chunk-YLPDYRSB.js";
+} from "./chunk-VMBBQAMK.js";
+import {
+  treeCollapseMotion
+} from "./chunk-ZJY3TXXI.js";
 import {
   NzOutletModule,
   NzStringTemplateOutletDirective
@@ -24,9 +24,6 @@ import {
   InputBoolean
 } from "./chunk-PGY7GMJ7.js";
 import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-S6IQ6YOW.js";
-import {
   CdkFixedSizeVirtualScroll,
   CdkVirtualForOf,
   CdkVirtualScrollViewport
@@ -34,6 +31,9 @@ import {
 import {
   Directionality
 } from "./chunk-AA6VEHDB.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-S6IQ6YOW.js";
 import {
   NgForOf,
   NgIf,
@@ -3264,4 +3264,4 @@ export {
   NzTreeComponent,
   NzTreeModule
 };
-//# sourceMappingURL=chunk-H3SQW6NL.js.map
+//# sourceMappingURL=chunk-SCIK4CC7.js.map

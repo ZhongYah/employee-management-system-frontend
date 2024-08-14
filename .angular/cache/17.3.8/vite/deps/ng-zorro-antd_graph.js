@@ -10,8 +10,6 @@ import {
 import {
   InputBoolean
 } from "./chunk-PGY7GMJ7.js";
-import "./chunk-UVZFAEO6.js";
-import "./chunk-SYALVF3J.js";
 import {
   SelectionModel
 } from "./chunk-2R2R2DRX.js";
@@ -23,6 +21,8 @@ import {
   style
 } from "./chunk-W5O2WBSO.js";
 import "./chunk-WURNZSG6.js";
+import "./chunk-UVZFAEO6.js";
+import "./chunk-SYALVF3J.js";
 import {
   NgTemplateOutlet
 } from "./chunk-2RXIFI2X.js";

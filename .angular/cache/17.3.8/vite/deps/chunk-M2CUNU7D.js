@@ -1,7 +1,7 @@
 import {
   NzIconDirective,
   NzIconModule
-} from "./chunk-YLPDYRSB.js";
+} from "./chunk-VMBBQAMK.js";
 import {
   NzConfigService,
   WithConfig
@@ -374,4 +374,4 @@ export {
   NzAvatarGroupComponent,
   NzAvatarModule
 };
-//# sourceMappingURL=chunk-EJRM2GTS.js.map
+//# sourceMappingURL=chunk-M2CUNU7D.js.map

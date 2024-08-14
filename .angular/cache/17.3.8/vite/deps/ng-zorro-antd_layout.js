@@ -1,17 +1,16 @@
 import {
   NzMenuDirective
-} from "./chunk-PGJ3YZFN.js";
+} from "./chunk-VJE5B4K6.js";
 import "./chunk-G3DYON5W.js";
 import "./chunk-CH5A5UKB.js";
 import "./chunk-K6CSCT4K.js";
 import "./chunk-CKW2QLBS.js";
-import "./chunk-EOJUAMLJ.js";
-import "./chunk-ZJY3TXXI.js";
 import {
   NzIconDirective,
   NzIconModule
-} from "./chunk-YLPDYRSB.js";
+} from "./chunk-VMBBQAMK.js";
 import "./chunk-5QBFNWJX.js";
+import "./chunk-ZJY3TXXI.js";
 import "./chunk-HYLVD4RR.js";
 import {
   NzBreakpointService,
@@ -24,8 +23,6 @@ import {
   inNextTick,
   toCssPixel
 } from "./chunk-PGY7GMJ7.js";
-import "./chunk-UVZFAEO6.js";
-import "./chunk-SYALVF3J.js";
 import "./chunk-KMAF6TOC.js";
 import "./chunk-OULAOTWT.js";
 import "./chunk-2R2R2DRX.js";
@@ -40,6 +37,9 @@ import {
   Directionality
 } from "./chunk-AA6VEHDB.js";
 import "./chunk-WURNZSG6.js";
+import "./chunk-EOJUAMLJ.js";
+import "./chunk-UVZFAEO6.js";
+import "./chunk-SYALVF3J.js";
 import {
   NgTemplateOutlet
 } from "./chunk-2RXIFI2X.js";

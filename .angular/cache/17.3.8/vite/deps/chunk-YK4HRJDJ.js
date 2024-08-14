@@ -1,10 +1,10 @@
 import {
-  moveUpMotion
-} from "./chunk-ZJY3TXXI.js";
-import {
   NzIconDirective,
   NzIconModule
-} from "./chunk-YLPDYRSB.js";
+} from "./chunk-VMBBQAMK.js";
+import {
+  moveUpMotion
+} from "./chunk-ZJY3TXXI.js";
 import {
   NzOutletModule,
   NzStringTemplateOutletDirective
@@ -686,4 +686,4 @@ export {
   NzMessageModule,
   NzMessageService
 };
-//# sourceMappingURL=chunk-2MXPL73Z.js.map
+//# sourceMappingURL=chunk-YK4HRJDJ.js.map

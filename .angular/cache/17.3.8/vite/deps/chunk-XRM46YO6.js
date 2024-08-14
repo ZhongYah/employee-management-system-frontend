@@ -7,7 +7,7 @@ import {
   NzFormNoStatusService,
   NzFormPatchModule,
   NzFormStatusService
-} from "./chunk-MHQ6ZACL.js";
+} from "./chunk-QGXQQAZV.js";
 import {
   NzConnectedOverlayDirective,
   NzOverlayModule,
@@ -18,12 +18,12 @@ import {
   NzNoAnimationDirective
 } from "./chunk-CH5A5UKB.js";
 import {
-  slideMotion
-} from "./chunk-ZJY3TXXI.js";
-import {
   NzIconDirective,
   NzIconModule
-} from "./chunk-YLPDYRSB.js";
+} from "./chunk-VMBBQAMK.js";
+import {
+  slideMotion
+} from "./chunk-ZJY3TXXI.js";
 import {
   NzOutletModule,
   NzStringTemplateOutletDirective
@@ -44,14 +44,6 @@ import {
   getStatusClassNames,
   isNotNil
 } from "./chunk-PGY7GMJ7.js";
-import {
-  COMPOSITION_BUFFER_MODE,
-  DefaultValueAccessor,
-  FormsModule,
-  NG_VALUE_ACCESSOR,
-  NgControlStatus,
-  NgModel
-} from "./chunk-S6IQ6YOW.js";
 import {
   FocusMonitor
 } from "./chunk-KBTCTVB4.js";
@@ -80,6 +72,14 @@ import {
 import {
   Directionality
 } from "./chunk-AA6VEHDB.js";
+import {
+  COMPOSITION_BUFFER_MODE,
+  DefaultValueAccessor,
+  FormsModule,
+  NG_VALUE_ACCESSOR,
+  NgControlStatus,
+  NgModel
+} from "./chunk-S6IQ6YOW.js";
 import {
   NgForOf,
   NgIf,
@@ -3239,4 +3239,4 @@ export {
   NzSelectComponent,
   NzSelectModule
 };
-//# sourceMappingURL=chunk-5CRQEU7D.js.map
+//# sourceMappingURL=chunk-XRM46YO6.js.map

@@ -1,7 +1,7 @@
 import {
   NzIconDirective,
   NzIconModule
-} from "./chunk-YLPDYRSB.js";
+} from "./chunk-VMBBQAMK.js";
 import {
   NzOutletModule,
   NzStringTemplateOutletDirective
@@ -765,4 +765,4 @@ export {
   NzProgressComponent,
   NzProgressModule
 };
-//# sourceMappingURL=chunk-MONSWQFQ.js.map
+//# sourceMappingURL=chunk-XURUZKBA.js.map

@@ -22,11 +22,6 @@ import {
   isNil,
   silentEvent
 } from "./chunk-PGY7GMJ7.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-S6IQ6YOW.js";
-import "./chunk-UVZFAEO6.js";
-import "./chunk-SYALVF3J.js";
 import "./chunk-KMAF6TOC.js";
 import "./chunk-OULAOTWT.js";
 import "./chunk-2R2R2DRX.js";
@@ -46,6 +41,11 @@ import {
   Directionality
 } from "./chunk-AA6VEHDB.js";
 import "./chunk-WURNZSG6.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-S6IQ6YOW.js";
+import "./chunk-UVZFAEO6.js";
+import "./chunk-SYALVF3J.js";
 import {
   NgForOf,
   NgIf,

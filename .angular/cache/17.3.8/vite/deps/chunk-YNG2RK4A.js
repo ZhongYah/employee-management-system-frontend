@@ -1,13 +1,13 @@
 import {
-  NzTransitionPatchModule
-} from "./chunk-UEA4TNLS.js";
-import {
   NzWaveModule
 } from "./chunk-Z4IKHICD.js";
 import {
+  NzTransitionPatchModule
+} from "./chunk-UEA4TNLS.js";
+import {
   NzIconDirective,
   NzIconModule
-} from "./chunk-YLPDYRSB.js";
+} from "./chunk-VMBBQAMK.js";
 import {
   NzConfigService,
   WithConfig
@@ -421,4 +421,4 @@ export {
   NzButtonGroupComponent,
   NzButtonModule
 };
-//# sourceMappingURL=chunk-FTLHXQE5.js.map
+//# sourceMappingURL=chunk-YNG2RK4A.js.map

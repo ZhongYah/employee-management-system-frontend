@@ -55,15 +55,15 @@ import {
   warn
 } from "./chunk-PGY7GMJ7.js";
 import {
+  Platform
+} from "./chunk-T7OX5CH3.js";
+import {
   DomSanitizer
 } from "./chunk-UVZFAEO6.js";
 import {
   HttpBackend,
   HttpClient
 } from "./chunk-SYALVF3J.js";
-import {
-  Platform
-} from "./chunk-T7OX5CH3.js";
 import {
   DOCUMENT
 } from "./chunk-2RXIFI2X.js";
@@ -1204,4 +1204,4 @@ export {
   NzIconDirective,
   NzIconModule
 };
-//# sourceMappingURL=chunk-YLPDYRSB.js.map
+//# sourceMappingURL=chunk-VMBBQAMK.js.map

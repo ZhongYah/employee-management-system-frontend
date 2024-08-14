@@ -1,7 +1,7 @@
 <!-- <input nzSize="large" nz-input class="input-field-70" /> -->
 
 <div class="input-container">
-    <input nzSize="large" nz-input [type]="getInputType()" [ngClass]="getInputClass()" [(ngModel)]="contentEntered"
+    <input nz-input [type]="getInputType()" [ngClass]="getInputClass()" [(ngModel)]="contentEntered"
         (ngModelChange)="onInputTextChange($event)" [disabled]="disabled" [placeholder]="placeholderText" />
     <ng-container *ngIf="type === 'PWD'">
         <img *ngIf="showPassword" [src]="getIconClass('show')" class="button-icon" (click)="toggleShowPassword()" />
