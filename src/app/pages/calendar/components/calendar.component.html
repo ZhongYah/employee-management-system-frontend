@@ -21,9 +21,9 @@
                         <input id="startDate" [(ngModel)]="modalData.startDate" name="startDate" type="date"
                             [disabled]="!isEditing" class="custom-disabled-text" />
                         <div *ngIf="modalData.startDateTime !=='' || (modalData.startDateTime ==='' && isEditing)">
-                            <input id="startDateTime" type="text" [disabled]="!isEditing"
+                            <input id="startDateTime" type="time" [disabled]="!isEditing"
                                 [(ngModel)]="modalData.startDateTime" [ngModelOptions]="{ standalone: true }"
-                                placeholder="請輸入開始時間">
+                                class="custom-disabled-text">
                         </div>
                     </div>
                 </td>
@@ -35,7 +35,7 @@
                         <input id="endDate" [(ngModel)]="modalData.endDate" name="endDate" type="date"
                             [disabled]="!isEditing" class="custom-disabled-text" />
                         <div *ngIf="modalData.endDateTime !=='' || (modalData.endDateTime ==='' && isEditing)">
-                            <input id="startDateTime" type="text" [disabled]="!isEditing"
+                            <input id="startDateTime" type="time" [disabled]="!isEditing"
                                 [(ngModel)]="modalData.endDateTime" [ngModelOptions]="{ standalone: true }"
                                 placeholder="請輸入結束時間">
                         </div>

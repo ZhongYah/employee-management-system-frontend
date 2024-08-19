@@ -25,7 +25,7 @@ export class WelcomeComponent {
         }
 
         const originalData_2 = {
-            date: '6/20',
+            date: '2024/06/20',
             info: '【公告】這是測試公告。測試佈局和樣式效果。我們需要確保文字能正確換行，並且在不同裝置上都能正常顯示。這個公告的目的是驗證文字長度對頁面佈局的影響。',
             unit: '資訊室',
         }

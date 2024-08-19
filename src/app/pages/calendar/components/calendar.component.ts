@@ -1,4 +1,5 @@
 import {
+    AfterViewInit,
     ChangeDetectorRef,
     Component,
     OnInit,
@@ -27,7 +28,7 @@ import {CalendarService} from '../service/calendar.service'
     styleUrls: ['./calendar.component.scss'],
     imports: [SharedModule, ButtonComponent, InputComponent],
 })
-export class CalendarComponent implements OnInit {
+export class CalendarComponent implements OnInit, AfterViewInit {
     @ViewChild(FullCalendarComponent)
     calendarComponent!: FullCalendarComponent // 引用模板內的 FullCalendarComponent
     @ViewChild('contentTemplate', {static: true}) //  引用輸入模板 html
@@ -79,6 +80,18 @@ export class CalendarComponent implements OnInit {
                 hour12: false,
             },
         }
+    }
+
+    ngAfterViewInit(): void {
+        this.calendarService.getRefreshObservable().subscribe(() => {
+            // 确保 calendarComponent 已初始化
+            setTimeout(() => {
+                if (this.calendarComponent) {
+                    const calendarApi = this.calendarComponent.getApi()
+                    calendarApi.render()
+                }
+            }, 200) // 使用 setTimeout 確保非同步執行
+        })
     }
 
     // 日期顏色映射表

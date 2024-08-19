@@ -1,14 +1,23 @@
 import {Injectable} from '@angular/core'
 import {HttpClient} from '@angular/common/http'
-import {Observable, of} from 'rxjs'
+import {Observable, of, Subject} from 'rxjs'
 
 @Injectable({
     providedIn: 'root',
 })
 export class CalendarService {
     private apiUrl = '' // API URL
+    private refreshSubject = new Subject<void>()
 
     constructor(private http: HttpClient) {}
+
+    getRefreshObservable() {
+        return this.refreshSubject.asObservable()
+    }
+
+    triggerRefresh() {
+        this.refreshSubject.next()
+    }
 
     fetchCalendarData(startDate: string, endDate: string): Observable<any[]> {
         // 發送 GET 請求到後端 API，並傳遞日期範圍作為查詢參數

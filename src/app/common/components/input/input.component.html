@@ -2,7 +2,8 @@
 
 <div class="input-container">
     <input nz-input [type]="getInputType()" [ngClass]="getInputClass()" [(ngModel)]="contentEntered"
-        (ngModelChange)="onInputTextChange($event)" [disabled]="disabled" [placeholder]="placeholderText" />
+        (ngModelChange)="onInputTextChange($event)" [disabled]="disabled" [placeholder]="placeholderText"
+        class="custom-disabled-text" />
     <ng-container *ngIf="type === 'PWD'">
         <img *ngIf="showPassword" [src]="getIconClass('show')" class="button-icon" (click)="toggleShowPassword()" />
         <img *ngIf="!showPassword" [src]="getIconClass('hide')" class="button-icon" (click)="toggleShowPassword()" />
